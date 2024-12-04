@@ -1,0 +1,64 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DownloadButton.css */
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: .5s;
+}
+
+.download-button:active {
+  transform: scale(1);
+}
+
+.button-text {
+  margin-right: 10px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.arrow {
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.download-button:hover .arrow {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: .5s;
+}
+
+.download-button:hover .button-text {
+  opacity: 0;
+  transition: .5s;
+}
+
+.download-button:active .arrow {
+  transform: translateX(0);
+  transition: transform 0.1s ease-out;
+}
